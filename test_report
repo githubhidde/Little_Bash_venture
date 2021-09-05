@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This report shows the 5 processes that are using
+# the most of the memory resources during execution time.
+
+# This is a variable
+FILENAME="MEMORY-USAGE-REPORT"
+
+# The actual script
+ps -eo comm,pmem --sort -pmem | head -6 > /home/hidde/reports_repo/$FILENAME
+# To assign the timestamp its recommendable to use the mv command
+mv "/home/hidde/reports_repo/$FILENAME" "/home/hidde/reports_repo/$(date +%F-%T-)$FILENAME"
