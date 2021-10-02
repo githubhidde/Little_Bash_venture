@@ -1,0 +1,17 @@
+#!/bin/bash
+# while loop in conjunction with an if-else statement
+
+x=0
+
+while [[ $x -le 5 ]]; do
+
+  if (( $x == 1 )); then
+    echo "$x" shot fired
+
+  else (( $x > 1 ))
+    echo "$x" shots fired
+  fi
+  
+  x=$(( x + 1 ))
+
+done
