@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# codewars challenge, check out the URL:
+# https://www.codewars.com/kata/5947cc20eecfde0b14000040/train/shell
+
+# ** Keeping it very basic to try out test cases.**
+
+# Print the numbers 1-30.
+
+i=1
+while (( $i <= 30 ))
+do
+    echo $i
+    i=$(($i+1))
+done
